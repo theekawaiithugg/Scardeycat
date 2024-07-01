@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <!-- Metadata and title of the document -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Eyes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/eyebalstyle.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <img src="{{ url_for('static', filename='img/finabackground.jpg') }}" alt="Scary Face" id="backing">
+    <img src="{{ url_for('static', filename='img/dark.jpg') }}" alt="Scary Face" id="backing">
+    <img src="{{ url_for('static', filename='img/homepage.jpg') }}" alt="Scary Face" id="computer">
+    <img src="{{ url_for('static', filename='img/scaryface.jpg') }}" alt="Scary Face" id="scaryface">
+    <img src="{{ url_for('static', filename='img/eyeball.jpg') }}" alt="Eyeball" id="eyeball">
+    <a href="{{ url_for('off') }}">
+        <img src="{{ url_for('static', filename='img/powerbttn.jpg') }}" alt="Power Button" id="powerbuttoneye">
+    </a>
+    <div class="container">
+        <div class="text-overlay">
+            <p class ="retro-text">
+                Would you like me to let you in?<br>
+                <a href="{{ url_for('grab') }}" class="retro-text button">Yes.</a>
+                <a href="{{ url_for('Login1') }}" class="retro-text button">No.</a>
+                
+            </p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

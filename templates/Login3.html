@@ -1,0 +1,39 @@
+<!--- This is the Final project for ALEXIS MARTINEZ AT UAT FOR MS587-->
+
+<!DOCTYPE html>
+
+<html>
+        <!-- Head Section-->
+    <head>
+        <title>Login purple!</title>
+        <!--Create a link tag that will link our CSS file-->
+        <meta charset="UTF-8">
+        <!-- set the viewport to the device width and scale so that the page is responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href={{url_for('static', filename ='css/styles2.css')}}>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <img src="{{ url_for('static', filename='img/finabackground.jpg') }}" alt="Scary Face" id="backing">
+        <img src="{{ url_for('static', filename='img/Try_pasword_last_time.jpg') }}" alt="Scary Face" id="computer">
+        <a href="{{ url_for('off') }}">
+            <img src="{{ url_for('static', filename='img/powerbttn.jpg') }}" alt="Power Button" id="powerbutton">
+        </a>
+            <div class="container">
+                <div class="text-overlay">
+                <form method="POST" action="{{ url_for('logingin3') }}">
+                <label class ="retro-text" for="username">Username:</label>
+                <input class ="retro-text" type="text" id="username" name="username" required>
+                <br>
+                <label class ="retro-text"for="password">Password:</label>
+                <input class ="retro-text" type="password" id="password" name="password" required>
+                <br>
+                <!--This is the login button-->
+                <button class ="retro-text button" type="submit">Login</button>
+                <a href="{{ url_for('hint3') }}" class="retro-text button">Hint.</a>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>

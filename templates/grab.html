@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Eyes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/eyebalstyle.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <img src="{{ url_for('static', filename='img/finabackground.jpg') }}" alt="Scary Face" id="backing">
+    <img src="{{ url_for('static', filename='img/dark.jpg') }}" alt="Scary Face" id="scawy">
+    <img src="{{ url_for('static', filename='img/homepage.jpg') }}" alt="Scary Face" id="computer">
+        <img src="{{ url_for('static', filename='img/pullingyouin.jpg') }}" alt="Scary Face" id="scaryface">
+    <a href="{{ url_for('off') }}">
+        <img src="{{ url_for('static', filename='img/powerbttn.jpg') }}" alt="Power Button" id="powerbuttongrab">
+    </a>
+    <div class="container">
+        <div class="text-overlay">
+            <p class ="retrotext2">
+               Dont be shy come on in!
+            </p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

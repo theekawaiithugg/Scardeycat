@@ -1,0 +1,34 @@
+<!--- This is the Final project for ALEXIS MARTINEZ AT UAT FOR MS587-->
+
+<!DOCTYPE html>
+
+<html>
+        <!-- Head Section-->
+    <head>
+        <title>Hint #2 for login.</title>
+        <!--Create a link tag that will link our CSS file-->
+        <meta charset="UTF-8">
+        <!-- set the viewport to the device width and scale so that the page is responsive-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href={{url_for('static', filename ='css/styles.css')}}>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <img src="{{ url_for('static', filename='img/finabackground.jpg') }}" alt="Scary Face" id="backing">
+        <img src="{{ url_for('static', filename='img/homepage.jpg') }}" alt="Scary Face" id="computer">
+        <a href="{{ url_for('off') }}">
+            <img src="{{ url_for('static', filename='img/powerbttn.jpg') }}" alt="Power Button" id="indexpowerbutton">
+        </a>
+            <div class="container">
+                <div class="text-overlay">
+                <p class ="retro-text">
+                    Hint #2:<br> <br>
+                    In the absence of all, you find the entrance. <br> <br> What do you provide?
+                </p>
+                <!--This is the login button-->
+                <a href="{{ url_for('Login2') }}" class="retro-text button">Log in now.</a>
+                </div>
+            </div>
+    </body>
+</html>
