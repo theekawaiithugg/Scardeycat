@@ -1,41 +1,49 @@
-<!--- This is the Final project for ALEXIS MARTINEZ AT UAT FOR MS587-->
+<!-- This is the Final project for ALEXIS MARTINEZ AT UAT FOR MS587 -->
 
 <!DOCTYPE html>
-
 <html>
-        <!-- Head Section-->
+    <!-- Head Section-->
     <head>
         <title>Login purple!</title>
-        <!--Create a link tag that will link our CSS file-->
+        <!-- Link to the CSS file for custom styles -->
         <meta charset="UTF-8">
-        <!-- set the viewport to the device width and scale so that the page is responsive-->
+        <!-- Set the viewport to the device width and scale so that the page is responsive -->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href={{url_for('static', filename ='css/styles2.css')}}>
+        <!-- Link to the custom CSS file using direct paths -->
+        <link rel="stylesheet" href="static/css/styles2.css">
+        <!-- Link to Google Fonts for custom font style -->
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     </head>
 
     <body>
-        <img src="{{ url_for('static', filename='img/finabackground.jpg') }}" alt="Scary Face" id="backing">
-        <img src="{{ url_for('static', filename='img/Try_again_password.jpg') }}" alt="Scary Face" id="computer">
-        <a href="{{ url_for('off') }}">
-            <img src="{{ url_for('static', filename='img/powerbttn.jpg') }}" alt="Power Button" id="powerbutton">
+        <!-- Background image with alt text and ID for styling -->
+        <img src="static/img/finabackground.jpg" alt="Scary Face" id="backing">
+        <!-- Image with alt text and ID for styling -->
+        <img src="static/img/Try_again_password.jpg" alt="Scary Face" id="computer">
+        <!-- Link with an image that acts as a power button -->
+        <a href="off.html">
+            <img src="static/img/powerbttn.jpg" alt="Power Button" id="powerbutton">
         </a>
-            <div class="container">
-                <div class="text-overlay">
-
-                <form method="POST" action="{{ url_for('logingin2') }}">
-                <label class ="retro-text" for="username">Username:</label>
-                <input class ="retro-text" type="text" id="username" name="username" required>
-                <br>
-                <label class ="retro-text"for="password">Password:</label>
-                <input class ="retro-text" type="password" id="password" name="password" required>
-                <br>
-                <!--This is the login button-->
-                <button class ="retro-text button" type="submit">Login</button>
-                <a href="{{ url_for('hint2') }}" class="retro-text button">Hint.</a>
-                <p class ="retro-text">
+        <!-- Container for overlay text and buttons -->
+        <div class="container">
+            <div class="text-overlay">
+                <!-- Form for user login -->
+                <form method="POST" action="logingin2.html">
+                    <!-- Username label and input field -->
+                    <label class="retro-text" for="username">Username:</label>
+                    <input class="retro-text" type="text" id="username" name="username" required>
+                    <br>
+                    <!-- Password label and input field -->
+                    <label class="retro-text" for="password">Password:</label>
+                    <input class="retro-text" type="password" id="password" name="password" required>
+                    <br>
+                    <!-- Login button -->
+                    <button class="retro-text button" type="submit">Login</button>
                 </form>
-                </div>
+                <!-- Hint button -->
+                <a href="hint2.html" class="retro-text button">Hint.</a>
+                <p class="retro-text"></p>
             </div>
+        </div>
     </body>
 </html>
