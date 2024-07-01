@@ -13,7 +13,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         <!-- Link to the custom CSS file using Flask's url_for -->
-        <link rel="stylesheet" href={{url_for('static', filename ='css/styles.css')}}>
+        <link rel="stylesheet" href={{url_for('static', filename ='static/css/styles.css')}}>
         
         <!-- Link to Google Fonts for custom font style -->
         <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
@@ -22,14 +22,14 @@
     <!-- Body Section -->
     <body>
         <!-- Background image with alt text and ID for styling -->
-        <img src="{{ url_for('static', filename='img/finabackground.jpg') }}" alt="Scary Face" id="backing">
+        <img src="{{ url_for('static', filename='static/img/finabackground.jpg') }}" alt="Scary Face" id="backing">
         
         <!-- Homepage image with alt text and ID for styling -->
-        <img src="{{ url_for('static', filename='img/homepage.jpg') }}" alt="Scary Face" id="computer">
+        <img src="{{ url_for('static', filename='static/img/homepage.jpg') }}" alt="Scary Face" id="computer">
         
         <!-- Link with an image that acts as a power button -->
         <a href="{{ url_for('off') }}">
-            <img src="{{ url_for('static', filename='img/powerbttn.jpg') }}" alt="Power Button" id="indexpowerbutton">
+            <img src="{{ url_for('static', filename='static/img/powerbttn.jpg') }}" alt="Power Button" id="indexpowerbutton">
         </a>
         
         <!-- Container for overlay text and buttons -->
